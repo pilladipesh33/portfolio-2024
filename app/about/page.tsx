@@ -1,4 +1,3 @@
-import { BreakSpace } from "@/components/break-spacing";
 import { AboutList } from "@/lib/constant";
 import Image from "next/image";
 import React from "react";
@@ -57,9 +56,44 @@ const About = () => {
         <h4 className="text-sm tracking-[1.86px] leading-[1.2em] text-[#afb2b9] pb-5 uppercase">
           education
         </h4>
-        <div className="relative h-48 w-full rounded-lg">
+        <div className="relative h-48 w-full rounded-3xl">
           <Image alt="uni" src={"/uni.jpeg"} layout="fill" objectFit="cover" />
         </div>
+
+        <p className="pt-5 text-sm text-[#3b3d41] tracking-normal leading-5">
+          Gitam campus.
+        </p>
+
+        <h1 className="pt-8 text-2xl font-normal tracking-[-.01em] leading-7 text-[#3b3d41]">
+          GITAM University
+        </h1>
+        <h2 className=" text-2xl font-normal tracking-tight leading-7 text-[#afb2b9]">
+          College of Information Technology
+        </h2>
+
+        <p className="pt-5 text-md font-normal tracking-normal leading-5 text-[#3b3d41]">
+          Bachelors in Electronic and Commnunication Engineering
+        </p>
+      </section>
+
+      <div className="border-white border border-b-[#ecedf0] pb-20"></div>
+
+      <section className="pt-5">
+        <h4 className="text-sm tracking-[1.86px] leading-[1.2em] text-[#afb2b9] pb-5 uppercase">
+          Things I love to do
+        </h4>
+
+        <ul className="pb-20">
+          <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
+            Anime
+          </li>
+          <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
+            Electronic games
+          </li>
+          <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
+            Football Fan
+          </li>
+        </ul>
       </section>
     </div>
   );
