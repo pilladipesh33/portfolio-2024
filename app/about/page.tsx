@@ -56,12 +56,12 @@ const About = () => {
         <h4 className="text-sm tracking-[1.86px] leading-[1.2em] text-[#afb2b9] pb-5 uppercase">
           education
         </h4>
-        <div className="relative h-48 w-full rounded-3xl">
+        <div className="relative h-48 w-full rounded-xl overflow-hidden shadow-xl ">
           <Image alt="uni" src={"/uni.jpeg"} layout="fill" objectFit="cover" />
         </div>
 
         <p className="pt-5 text-sm text-[#3b3d41] tracking-normal leading-5">
-          Gitam campus.
+          Gitam campus in summertime
         </p>
 
         <h1 className="pt-8 text-2xl font-normal tracking-[-.01em] leading-7 text-[#3b3d41]">
