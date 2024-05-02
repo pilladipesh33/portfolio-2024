@@ -80,6 +80,9 @@ export const CVContent = [
 export const AboutList = {
   NAME: "दीपेश",
   CONTENT_1:
-    "I'm a developer living in Jharkhand, India. Previously, an Electrical Engineer.",
-  CONTENT_2: "For a long time, I've been developing mobile application ",
+    "I'm a developer living in Jharkhand, India. Previously, an engineer from electrical field.",
+  CONTENT_2:
+    "For a long time, I've created circuit boards which is used in day to day life. I have been fascinated by how much connecting one node to another can create a robust system. Throughout this journey, I've been curious about understanding to build more intuitive things- which leaves me in developer hub where everyday someone creates and architect a new product and still there is so much still to explore.",
+  CONTENT_3:
+    "During my final year, I decided to shift my career toward developing in computing spaces because of a desire to work at large and faster scales. While computing field slowly evolves, still at the heart of this discipline are what make product valuable - It improves people's lives through emotion, usability and functionality. Instead of joining connection in a circuit board, I want people to use my create websites or app so that I can connect with them. Engineering has also given me a spactial 'taste' of connecting two dots, to make line which now allow me to bring systematic interface that feel more humane.",
 };
