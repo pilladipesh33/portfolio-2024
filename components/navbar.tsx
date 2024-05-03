@@ -1,14 +1,14 @@
-import Image from "next/image";
 import Logo from "@/public/logo";
 import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="fixed top-0 w-full py-4 px-5 backdrop-filter backdrop-blur-lg bg-opacity-30">
+    <main className="fixed w-full top-0 py-4 px-5 bg-opacity-30 backdrop-filter backdrop-blur-lg">
+      {/*    // <main className="fixed top-0 w-full py-4 px-5 backdrop-filter backdrop-blur-lg bg-opacity-30"> */}
       <nav className="flex justify-between items-center text-lg text-[rgb(59, 61, 65)]">
-        <div className="logo">
+        <Link href={"/"} className="logo">
           <Logo />
-        </div>
+        </Link>
         <div className="flex gap-5">
           <Link href={"/about"} className="cursor-pointer">
             About
@@ -21,6 +21,6 @@ export const Navbar = () => {
           </Link>
         </div>
       </nav>
-    </div>
+    </main>
   );
 };

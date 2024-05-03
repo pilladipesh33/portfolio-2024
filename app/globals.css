@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin-left: 24px;
-  margin-right: 24px;
-}
+/* html, */
+/* body { */
+/*   margin-left: 12px; */
+/*   margin-right: 12px; */
+/* } */
