@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <main className="fixed w-full top-0 py-4 px-5 bg-opacity-30 backdrop-filter backdrop-blur-lg">
+    <main className="fixed w-full top-0 py-4 px-5 bg-opacity-30 backdrop-filter backdrop-blur-lg block md:hidden">
       {/*    // <main className="fixed top-0 w-full py-4 px-5 backdrop-filter backdrop-blur-lg bg-opacity-30"> */}
       <nav className="flex justify-between items-center text-lg text-[rgb(59, 61, 65)]">
         <Link href={"/"} className="logo">
