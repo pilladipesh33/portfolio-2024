@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 mx-6">
       <section className="pt-10">
         <h1 className="uppercase text-xs leading-[1.2em] tracking-[1.86px] text-[#a1a1a1]">
           Let the animation load...

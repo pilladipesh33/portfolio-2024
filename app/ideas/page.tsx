@@ -1,11 +1,10 @@
 import { IdeasContent, ProjectList } from "@/lib/constant";
 import Link from "next/link";
-import { title } from "process";
 import React from "react";
 
 const Ideas = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 mx-6">
       <h1 className="pt-10 text-xs tracking-[1.86px] text-[#afb2b9]">
         SPECULATIVE
       </h1>

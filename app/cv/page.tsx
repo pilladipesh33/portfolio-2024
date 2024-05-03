@@ -3,7 +3,7 @@ import React from "react";
 
 const CV = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 mx-6">
       <section className="pt-10">
         <h2 className="text-sm tracking-[1.86px] leading-[1.2em] text-[#afb2b9] pb-10">
           CV

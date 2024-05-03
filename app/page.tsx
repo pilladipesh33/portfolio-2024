@@ -2,7 +2,7 @@ import { Homepage } from "@/lib/constant";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="mx-6">
       <section className="mt-20">
         <h4 className="pt-6 text-xl cursor-default">
           <span>{Homepage.PEOPLE}</span>, Hello there
