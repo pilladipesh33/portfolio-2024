@@ -1,7 +1,8 @@
 import Logo from "@/public/logo";
 import Link from "next/link";
+import { ReactNode } from "react";
 
-export const Navbar = () => {
+export const Navbar = ({ children }: { children: ReactNode }) => {
   return (
     <main className="fixed w-full top-0 py-4 px-5 bg-opacity-30 backdrop-filter backdrop-blur-lg block md:hidden">
       {/*    // <main className="fixed top-0 w-full py-4 px-5 backdrop-filter backdrop-blur-lg bg-opacity-30"> */}
@@ -21,6 +22,7 @@ export const Navbar = () => {
           </Link>
         </div>
       </nav>
+      <div>{children}</div>
     </main>
   );
 };
