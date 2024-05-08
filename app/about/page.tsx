@@ -1,4 +1,5 @@
 import { AboutItem } from "@/components/three/aboutItem";
+import { AboutItem2 } from "@/components/three/aboutItem2";
 import { AboutList, bricolage } from "@/lib/constant";
 import Image from "next/image";
 import React from "react";
@@ -108,22 +109,26 @@ const About = () => {
 
       <div className="border-white border border-b-[#ecedf0] pb-20"></div>
 
-      <section className="pt-5">
-        <h4 className="text-sm tracking-[1.86px] leading-[1.2em] text-[#afb2b9] pb-5 uppercase">
-          Things I love to do
-        </h4>
-
-        <ul className="pb-20">
-          <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
-            Anime
-          </li>
-          <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
-            Electronic games
-          </li>
-          <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
-            Football Fan
-          </li>
-        </ul>
+      <section className="pt-5 md:flex md:justify-between md:items-center">
+        <div className="">
+          <h4 className="text-sm tracking-[1.86px] leading-[1.2em] text-[#afb2b9] pb-5 uppercase">
+            Things I love to do
+          </h4>
+          <ul className="pb-20">
+            <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
+              Anime
+            </li>
+            <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
+              Electronic games
+            </li>
+            <li className="text-2xl font-normal tracking-normal leading-7 text-[#3b3d41]">
+              Football Fan
+            </li>
+          </ul>
+        </div>
+        <div className="md:block hidden">
+          <AboutItem2 />
+        </div>
       </section>
     </div>
   );
