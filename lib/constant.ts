@@ -1,3 +1,5 @@
+import { Bricolage_Grotesque } from "next/font/google";
+
 export const Homepage = {
   PEOPLE: "नमस्ते",
   CONTENT:
@@ -84,3 +86,8 @@ export const AboutList = {
   CONTENT_3:
     "During my final year, I decided to shift my career toward developing in computing spaces because of a desire to work at large and faster scales. While computing field slowly evolves, still at the heart of this discipline are what make product valuable - It improves people's lives through emotion, usability and functionality. Instead of joining connection in a circuit board, I want people to use my create websites or app so that I can connect with them. Engineering has also given me a spactial 'taste' of connecting two dots, to make line which now allow me to bring systematic interface that feel more humane.",
 };
+
+export const bricolage = Bricolage_Grotesque({
+  weight: "500",
+  subsets: ["latin"],
+});
