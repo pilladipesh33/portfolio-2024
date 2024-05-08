@@ -2,7 +2,6 @@
 
 import Logo from "@/public/logo";
 import Link from "next/link";
-import { ReactNode } from "react";
 import { Bricolage_Grotesque } from "next/font/google";
 
 const bricolage = Bricolage_Grotesque({
@@ -10,13 +9,15 @@ const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
-export const Sidebar = ({ children }: { children: ReactNode }) => {
+export const Sidebar = () => {
   return (
     <main className="hidden md:block">
-      <div className="grid grid-cols-12 h-[100dvh]">
-        <div className="col-span-2 border border-b-[#ecedf0] pt-10">
+      <div className="fixed left-0 top-0">
+        <div className="w-[270px] h-[100dvh] border border-b-[#ecedf0] pt-10 fixed">
           <div className="pb-8 px-8 border border-b-[#ecedf0] border-white">
-            <Logo />
+            <Link href={"/"}>
+              <Logo />
+            </Link>
             <ul className="flex flex-col gap-3 pt-5 text-xl text-[#3b3d41]">
               <Link href={"/about"} className={bricolage.className}>
                 About
@@ -47,7 +48,6 @@ export const Sidebar = ({ children }: { children: ReactNode }) => {
             </ul>
           </div>
         </div>
-        <div className="col-span-10">{children}</div>
       </div>
     </main>
   );
