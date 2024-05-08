@@ -1,9 +1,7 @@
-import { title } from "process";
-
 export const Homepage = {
   PEOPLE: "नमस्ते",
   CONTENT:
-    "Energetic Front-End Developer crafting user-centric mobile apps in React Native, Next.js & Tailwind CSS. Building beautiful, intuitive UIs fuels my passion for web & mobile dev.",
+    "Dipesh is a Front-End Developer crafting user-centric mobile apps in React Native, Next.js & Tailwind CSS. Building beautiful, intuitive UIs fuels my passion for web & mobile dev.",
 };
 
 export const IdeasContent = {
