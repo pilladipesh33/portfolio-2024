@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        // bricolage: "var(--font-bricolage)",
+        // bricolage_semi: "var(--font-bricolage-semi)",
+        // lora: "var(--font-lora)",
+        sans: ["var(--font-bricolage)"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -23,6 +29,7 @@ const config: Config = {
       xl: "1.25rem",
       "2xl": "22px",
       "3xl": "28px",
+      "4xl": "36px",
     },
   },
   plugins: [],
