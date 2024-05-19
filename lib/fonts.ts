@@ -1,20 +1,27 @@
-import { Bricolage_Grotesque, Lora } from "next/font/google";
+import { Noto_Serif_Devanagari } from "next/font/google";
+import localFont from "next/font/local";
 
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "400",
+export const satoshi = localFont({
+  src: "../public/fonts/Satoshi-Medium.ttf",
   display: "swap",
-  variable: "--font-bricolage",
+  variable: "--font-satoshi",
 });
 
-const bricolageSemibold = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "600",
-  variable: "--font-bricolage-semi",
+export const cabinetBold = localFont({
+  src: "../public/fonts/CabinetGrotesk-Bold.ttf",
+  display: "swap",
+  variable: "--font-cabinet-bold",
 });
 
-const lora = Lora({
-  subsets: ["latin"],
+export const cabinetExtraBold = localFont({
+  src: "../public/fonts/CabinetGrotesk-Extrabold.ttf",
+  display: "swap",
+  variable: "--font-cabinet-extraBold",
+});
+
+export const hindi = Noto_Serif_Devanagari({
+  subsets: ["devanagari"],
+  display: "swap",
+  variable: "--font-hindi",
   weight: "400",
-  variable: "--font-lora",
 });
