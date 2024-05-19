@@ -2,12 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Sidebar } from "@/components/sidebar";
-import { Lora } from "next/font/google";
-
-const lora = Lora({
-  weight: "400",
-  subsets: ["latin"],
-});
+import { cabinetBold, cabinetExtraBold, hindi, satoshi } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Pilla Dipesh",
@@ -20,7 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${hindi.variable} ${satoshi.variable} ${cabinetBold.variable} ${cabinetExtraBold.variable}`}
+    >
       <body className="">
         <Navbar />
         <Sidebar />

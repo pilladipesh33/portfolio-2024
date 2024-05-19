@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        // bricolage: "var(--font-bricolage)",
-        // bricolage_semi: "var(--font-bricolage-semi)",
-        // lora: "var(--font-lora)",
-        sans: ["var(--font-bricolage)"],
+        body: ["var(--font-satoshi)", "sans-serif"],
+        title: ["var(--font-cabinet-bold)", "sans-serif"],
+        "title-bold": ["var(--font-cabinet-extraBold)", "sans-serif"],
+        hindi: ["var(--font-hindi)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
