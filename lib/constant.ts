@@ -13,49 +13,52 @@ export const IdeasContent = {
 
 export const ProjectList = [
   {
-    title: "Project 1",
+    title: "Storage Canvas",
     date: "MM/DD/YYYY",
     link: "www.google.co.in",
   },
   {
-    title: "Project 2",
+    title: "Fintech App",
     date: "MM/DD/YYYY",
     link: "www.google.co.in",
   },
   {
-    title: "Project 3",
+    title: "File Converter Saas",
     date: "MM/DD/YYYY",
     link: "www.google.co.in",
   },
   {
-    title: "Project 4",
+    title: "Job Portal",
     date: "MM/DD/YYYY",
     link: "www.google.co.in",
   },
   {
-    title: "Project 5",
+    title: "Apple TV rebuild",
     date: "MM/DD/YYYY",
     link: "www.google.co.in",
   },
   {
-    title: "Project 6",
-    date: "MM/DD/YYYY",
-    link: "www.google.co.in",
+    title: "Symphony Trading App",
+    date: "12/02/2023",
+    link: "",
   },
   {
-    title: "Project 7",
-    date: "MM/DD/YYYY",
-    link: "www.google.co.in",
+    title: "Malnutrition App",
+    date: "23/11/2022",
+    link: "",
+  },
+];
+
+export const contributionList = [
+  {
+    title: "MagicUI",
+    link: "https://magicui.design/",
+    date: "29/05/2024",
   },
   {
-    title: "Project 8",
-    date: "MM/DD/YYYY",
-    link: "www.google.co.in",
-  },
-  {
-    title: "Project 9",
-    date: "MM/DD/YYYY",
-    link: "www.google.co.in",
+    title: "ebookCraft",
+    link: "https://github.com/Bashamega/ebookCraft",
+    date: "09/03/2024",
   },
 ];
 
