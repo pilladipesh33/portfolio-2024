@@ -1,4 +1,5 @@
-import { IdeasContent, ProjectList } from "@/lib/constant";
+import { ListShowcase } from "@/components/list-showcase";
+import { IdeasContent, ProjectList, contributionList } from "@/lib/constant";
 import Link from "next/link";
 import React from "react";
 
@@ -20,27 +21,25 @@ const Ideas = () => {
       <section>
         {ProjectList.map((items) => {
           return (
-            <div
-              key={items.title}
-              className="flex justify-between items-center pb-3 md:pb-5"
-            >
-              <Link
-                href={items.link}
-                target="_blank"
-                className="text-lg md:text-xl leading-6 tracking-[-.01em] text-[#3b3d41] font-body md:font-medium"
-              >
-                {items.title}
-              </Link>
-              <Link
-                href={items.link}
-                target="_blank"
-                className="text-md text-[#afb2b9] font-body"
-              >
-                {items.date}
-              </Link>
-            </div>
+            <ListShowcase
+              title={items.title}
+              link={items.link}
+              date={items.date}
+            />
           );
         })}
+      </section>
+      <section>
+        <h4 className="pt-10 pb-5 uppercase text-xs tracking-[1.86px] text-[#afb2b9] font-title md:text-[16px]">
+          contribution (open source)
+        </h4>
+        {contributionList.map((items) => (
+          <ListShowcase
+            title={items.title}
+            link={items.link}
+            date={items.date}
+          />
+        ))}
       </section>
     </div>
   );
