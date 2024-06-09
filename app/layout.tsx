@@ -3,7 +3,6 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Sidebar } from "@/components/sidebar";
 import { cabinetBold, cabinetExtraBold, hindi, satoshi } from "@/lib/fonts";
-import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Pilla Dipesh",
@@ -23,9 +22,7 @@ export default function RootLayout({
       <body className="">
         <Navbar />
         <Sidebar />
-        <main className="md:ml-[270px]">
-          <ThemeProvider>{children}</ThemeProvider>
-        </main>
+        <main className="md:ml-[270px]">{children}</main>
       </body>
     </html>
   );

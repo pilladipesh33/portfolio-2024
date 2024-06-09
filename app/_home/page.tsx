@@ -1,6 +1,5 @@
 "use client";
 
-import { TextParallaxContentExample } from "@/components/text-parallax";
 import { Homepage } from "@/lib/constant";
 
 const HomePage = () => {
@@ -18,14 +17,13 @@ const HomePage = () => {
           </p>
         </section>
       </main>
-      <div className="border pt-10 border-t-white border-x-white border-b-[#ecedf0]"></div>
+      <div className="border pt-10 border-t-white border-x-white border-b-neutral-200"></div>
       <section className="pt-6 pb-10">
         <div className="md:mx-16 mx-6 pb-6">
           <h4 className="font-title uppercase text-[#afb2b9] text-[16px]">
             craft
           </h4>
         </div>
-        <TextParallaxContentExample />
       </section>
     </>
   );

@@ -59,7 +59,7 @@ const About = () => {
         </p>
       </section>
 
-      <div className="border-white border border-b-[#ecedf0] pb-20"></div>
+      <div className="border-white border border-b-neutral-200 pb-20"></div>
 
       <section className="pt-5">
         <h4
@@ -100,7 +100,7 @@ const About = () => {
         </div>
       </section>
 
-      <div className="border-white border border-b-[#ecedf0] pb-20"></div>
+      <div className="border-white border border-b-neutral-200 pb-20"></div>
 
       <section className="pt-5">
         <div className="">

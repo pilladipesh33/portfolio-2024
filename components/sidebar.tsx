@@ -1,16 +1,14 @@
 "use client";
 
 import Logo from "@/public/logo";
-import { useTheme } from "next-themes";
 import Link from "next/link";
 
 export const Sidebar = () => {
-  const { setTheme, theme } = useTheme();
   return (
-    <main className="hidden md:block dark:bg-red-500">
+    <main className="hidden md:block">
       <div className="fixed left-0 top-0">
-        <div className="w-[270px] h-[100dvh] border border-b-[#ecedf0] pt-10 fixed">
-          <div className="pb-8 px-8 border border-b-[#ecedf0] border-white">
+        <div className="w-[270px] h-[100dvh] border border-b-neutral-200 pt-10 fixed">
+          <div className="pb-8 px-8 border border-b-neutral-200 border-white">
             <Link href={"/"}>
               <Logo />
             </Link>
@@ -28,6 +26,12 @@ export const Sidebar = () => {
                 Ideas
               </Link>
               <Link
+                href={"/lab"}
+                className="font-title hover:text-[#787276] w-1/2"
+              >
+                Lab
+              </Link>
+              <Link
                 href={"/cv"}
                 className="font-title hover:text-[#787276] w-1/2"
               >
@@ -35,7 +39,7 @@ export const Sidebar = () => {
               </Link>
             </ul>
           </div>
-          <div className="pt-6 pb-8 border border-b-[#ecedf0] border-white px-8">
+          <div className="pt-6 pb-8 border border-b-neutral-200 border-white px-8">
             <h4 className="text-[#afb2b9] uppercase text-[16px] font-title">
               contact
             </h4>
@@ -69,11 +73,6 @@ export const Sidebar = () => {
                 Github
               </Link>
             </ul>
-          </div>
-          <div className="pt-6 pb-8 border border-b-[#ecedf0] border-white px-8">
-            The current theme is: {theme}
-            <button onClick={() => setTheme("light")}>Light Mode</button>
-            <button onClick={() => setTheme("dark")}>Dark Mode</button>{" "}
           </div>
         </div>
       </div>

@@ -15,6 +15,9 @@ export const Navbar = () => {
           <Link href={"/ideas"} className="cursor-pointer">
             Ideas
           </Link>
+          <Link href={"/lab"} className="cursor-pointer">
+            Labs
+          </Link>
           <Link href={"/cv"} className="cursor-pointer">
             CV
           </Link>
