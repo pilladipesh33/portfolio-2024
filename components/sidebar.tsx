@@ -1,11 +1,13 @@
 "use client";
 
 import Logo from "@/public/logo";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 
 export const Sidebar = () => {
+  const { setTheme, theme } = useTheme();
   return (
-    <main className="hidden md:block">
+    <main className="hidden md:block dark:bg-red-500">
       <div className="fixed left-0 top-0">
         <div className="w-[270px] h-[100dvh] border border-b-[#ecedf0] pt-10 fixed">
           <div className="pb-8 px-8 border border-b-[#ecedf0] border-white">
@@ -67,6 +69,11 @@ export const Sidebar = () => {
                 Github
               </Link>
             </ul>
+          </div>
+          <div className="pt-6 pb-8 border border-b-[#ecedf0] border-white px-8">
+            The current theme is: {theme}
+            <button onClick={() => setTheme("light")}>Light Mode</button>
+            <button onClick={() => setTheme("dark")}>Dark Mode</button>{" "}
           </div>
         </div>
       </div>
