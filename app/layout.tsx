@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Sidebar } from "@/components/sidebar";
 import { cabinetBold, cabinetExtraBold, hindi, satoshi } from "@/lib/fonts";
+import { SmoothScrolling } from "@/components/smooth-scroll";
 
 export const metadata: Metadata = {
   title: "Pilla Dipesh",
@@ -20,9 +21,11 @@ export default function RootLayout({
       className={`${hindi.variable} ${satoshi.variable} ${cabinetBold.variable} ${cabinetExtraBold.variable}`}
     >
       <body className="">
-        <Navbar />
-        <Sidebar />
-        <main className="md:ml-[270px]">{children}</main>
+        <SmoothScrolling>
+          <Navbar />
+          <Sidebar />
+          <main className="md:ml-[270px]">{children}</main>
+        </SmoothScrolling>
       </body>
     </html>
   );
