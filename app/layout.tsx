@@ -20,7 +20,7 @@ export default function RootLayout({
       lang="en"
       className={`${hindi.variable} ${satoshi.variable} ${cabinetBold.variable} ${cabinetExtraBold.variable}`}
     >
-      <body className="">
+      <body className="bg-[#fffff0]">
         <SmoothScrolling>
           <Navbar />
           <Sidebar />

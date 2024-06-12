@@ -14,7 +14,7 @@ const About = () => {
           <div className="pt-20">
             <div className="flex justify-between w-full ">
               <h1
-                className={`bg-clip-text text-transparent bg-gradient-to-bl from-[#3B3D41] to-[#A7A7A7] text-[100px] leading-[100px] tracking-[-.04em] font-semibold md:text-[172px]
+                className={`bg-clip-text text-transparent bg-gradient-to-b from-[#ccff00] to-[#d2b9fc] text-[100px] leading-[100px] tracking-[-.04em] font-semibold md:text-[172px]
               md:tracking-tighter md:leading-[140px] font-title`}
               >
                 Pilla
@@ -24,7 +24,7 @@ const About = () => {
               </p>
             </div>
             <h1
-              className={`bg-clip-text text-transparent bg-gradient-to-bl from-[#3B3D41] to-[#A7A7A7] text-[100px] leading-[100px] tracking-[-.04em] font-semibold md:text-[172px]
+              className={`bg-clip-text text-transparent bg-gradient-to-b from-[#ccff00] to-[#d2b9fc] text-[100px] leading-[100px] tracking-[-.04em] font-semibold md:text-[172px]
               md:tracking-tighter md:leading-[200px] font-title`}
             >
               Dipesh
@@ -34,7 +34,7 @@ const About = () => {
 
         <div className="pt-5">
           <div className="flex justify-between w-full ">
-            <h1 className="bg-clip-text text-transparent bg-gradient-to-bl from-[#3B3D41] to-[#A7A7A7] text-[60px] leading-[100px] tracking-[-.03em] font-hindi">
+            <h1 className="bg-clip-text text-transparent bg-gradient-to-bl from-[#ccff00] to-[#d2b9fc] text-[60px] leading-[100px] tracking-[-.03em] font-hindi">
               {AboutList.NAME}
             </h1>
             <p className="text-[#a1a1a1] text-sm tracking=[1.86px] leading-[1.2em]">
