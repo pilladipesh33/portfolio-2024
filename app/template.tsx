@@ -20,7 +20,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
               {Array.from({ length: 11 }).map((_, blockIndex) => (
                 <motion.div
                   key={blockIndex}
-                  className="block"
+                  className="box"
                   initial={{ scaleY: 1 }}
                   animate={{ scaleY: 0 }}
                   exit={{ scaleY: 0 }}
@@ -42,7 +42,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
               {Array.from({ length: 11 }).map((_, blockIndex) => (
                 <motion.div
                   key={blockIndex}
-                  className="block"
+                  className="box"
                   initial={{ scaleY: 0 }}
                   animate={{ scaleY: 0 }}
                   exit={{ scaleY: 1 }}

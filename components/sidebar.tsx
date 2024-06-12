@@ -7,8 +7,8 @@ export const Sidebar = () => {
   return (
     <main className="hidden md:block">
       <div className="fixed left-0 top-0">
-        <div className="w-[270px] h-[100dvh] border border-b-[#ecedf0] pt-10 fixed">
-          <div className="pb-8 px-8 border border-b-[#ecedf0] border-white">
+        <div className="w-[270px] h-[100dvh] border border-b-neutral-200 pt-10 fixed">
+          <div className="pb-8 px-8 border border-b-neutral-200 border-white">
             <Link href={"/"}>
               <Logo />
             </Link>
@@ -26,6 +26,12 @@ export const Sidebar = () => {
                 Ideas
               </Link>
               <Link
+                href={"/lab"}
+                className="font-title hover:text-[#787276] w-1/2"
+              >
+                Lab
+              </Link>
+              <Link
                 href={"/cv"}
                 className="font-title hover:text-[#787276] w-1/2"
               >
@@ -33,7 +39,7 @@ export const Sidebar = () => {
               </Link>
             </ul>
           </div>
-          <div className="pt-6 pb-8 border border-b-[#ecedf0] border-white px-8">
+          <div className="pt-6 pb-8 border border-b-neutral-200 border-white px-8">
             <h4 className="text-[#afb2b9] uppercase text-[16px] font-title">
               contact
             </h4>
@@ -46,12 +52,19 @@ export const Sidebar = () => {
                 Mail
               </Link>
               <Link
-                href={"https://twitter.com/dip3sh_"}
+                href={"https://wa.me/7993097870"}
                 target="_blank"
                 className={`font-body hover:text-[#787276] w-1/2`}
               >
-                Twitter
+                WhatsApp
               </Link>
+            </ul>
+          </div>
+          <div className="pt-6 pb-8 border border-b-neutral-200 border-white px-8">
+            <h4 className="text-[#afb2b9] uppercase text-[16px] font-title">
+              socials
+            </h4>
+            <ul className="flex flex-col gap-3 pt-5 text-md text-[#3b3d41]">
               <Link
                 href={"https://www.linkedin.com/in/pilladipesh/"}
                 target="_blank"
@@ -65,6 +78,13 @@ export const Sidebar = () => {
                 className={`font-body hover:text-[#787276] w-1/2`}
               >
                 Github
+              </Link>
+              <Link
+                href={"https://x.com/dip3sh_"}
+                target="_blank"
+                className={`font-body hover:text-[#787276] w-1/2`}
+              >
+                Twitter
               </Link>
             </ul>
           </div>

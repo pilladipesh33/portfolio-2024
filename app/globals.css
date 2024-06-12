@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 .custom-gradient-text {
-  background: linear-gradient(to bottom left,
-      #3b3d41 0%,
-      #3b3d41 70%,
-      #a7a7a7 100%);
+  background: linear-gradient(
+    to bottom left,
+    #3b3d41 0%,
+    #3b3d41 60%,
+    #a7a7a7 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -28,17 +30,17 @@
   display: flex;
 }
 
-.block {
+.box {
   position: relative;
   flex: 1;
-  background: #3b3d41;
+  background: #a7a7a7;
   margin: -0.25px;
 }
 
-.transition-in .block {
+.transition-in .box {
   transform-origin: top;
 }
 
-.transition-out .block {
+.transition-out .box {
   transform-origin: bottom;
 }
