@@ -2,11 +2,11 @@
 
 import Projects from "@/components/ui/projects";
 
-export default function Works() {
+export default function Labs() {
   return (
     <section id="works" className="nav-change overflow-hidden mx-10 mb-10">
       <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12">
-        <h2 className="text-sm tracking-[1.86px] leading-[1.2em] text-neutral-400 md:text-[16px] font-title uppercase col-span-1">
+        <h2 className="text-sm tracking-[1.86px] leading-[1.2em] text-neutral-400 md:text-[16px] uppercase col-span-1 font-title">
           Labs
         </h2>
         {/* Project #1 */}

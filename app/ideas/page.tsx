@@ -6,7 +6,7 @@ import React from "react";
 const Ideas = () => {
   return (
     <div className="mt-20 mx-6 md:mt-0 md:mx-[11dvw]">
-      <h1 className="pt-10 text-xs tracking-[1.86px] text-[#afb2b9] font-title md:text-[16px]">
+      <h1 className="pt-10 text-xs tracking-[1.86px] text-[#afb2b9] md:text-[16px] font-title subpixel-antialiased">
         SPECULATIVE
       </h1>
       <h1 className="text-3xl tracking-[-.01em] text-[#3b3d41] pt-5 leading-9 font-normal font-title md:font-medium md:text-4xl">
@@ -19,9 +19,10 @@ const Ideas = () => {
       <div className="border-white border border-t-[#ecedf0] pb-10"></div>
 
       <section>
-        {ProjectList.map((items) => {
+        {ProjectList.map((items, index) => {
           return (
             <ListShowcase
+              key={index}
               title={items.title}
               link={items.link}
               date={items.date}
