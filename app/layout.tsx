@@ -6,7 +6,7 @@ import { cabinetBold, cabinetExtraBold, hindi, satoshi } from "@/lib/fonts";
 import { SmoothScrolling } from "@/components/smooth-scroll";
 
 export const metadata: Metadata = {
-  title: "Pilla Dipesh",
+  title: "Pilla Dipesh ── Frontend Developer ",
   description: "Portfolio",
 };
 
